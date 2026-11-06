@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+.site-header,
+main section,
+footer {
+  padding: 1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
