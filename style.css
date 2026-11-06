@@ -3,7 +3,14 @@
   justify-content: space-between;
   align-items: center;
 }
-
+ 
 .menu { display: flex; gap: 1rem; }
 .menu a { text-decoration: none; }
 .menu a:hover { color: #e05a00; }
+ 
+.cards { display: flex; flex-wrap: wrap; gap: 24px; }
+.card { flex: 1 1 260px; padding: 16px; border: 1px solid #ccc; }
+.card--highlight { border: 2px solid #e05a00; }
+.card__badge { color: #e05a00; font-weight: bold; }
+.card__price { font-weight: bold; }
+ 
