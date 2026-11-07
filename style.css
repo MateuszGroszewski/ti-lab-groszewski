@@ -44,6 +44,11 @@ h2 { margin-top: 0; }
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 .card h3 { margin-top: 0; }
 .card--highlight { border: 2px solid #e05a00; }
@@ -89,3 +94,25 @@ footer {
 }
 footer a { color: #f28c3a; }
  
+.menu-toggle {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .site-header { flex-wrap: wrap; }
+  .menu-toggle { display: block; }
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 12px;
+  }
+  .menu--open { display: flex; }
+}

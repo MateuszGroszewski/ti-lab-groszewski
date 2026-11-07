@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Szprycha – pracownia rowerowa w Bydgoszczy</title>
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <p class="logo">Szprycha</p>
-    <nav class="menu">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+    <nav class="menu" id="menu">
       <a href="#uslugi">Usługi</a>
       <a href="#cennik">Cennik</a>
       <a href="#kontakt">Kontakt</a>
