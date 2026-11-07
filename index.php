@@ -1,0 +1,74 @@
+<?php
+$firma = "Szprycha";
+$rok = date("Y");
+?>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Szprycha – pracownia rowerowa w Bydgoszczy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <p class="logo">Szprycha</p>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+    <nav class="menu" id="menu">
+      <a href="#uslugi">Usługi</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="uslugi">
+      <h2>Usługi</h2>
+      <p>Serwis, przeglądy i naprawy rowerów. Opis usług wkrótce.</p>
+    </section>
+
+    <section id="cennik">
+      <h2>Cennik</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Przegląd</h3>
+          <p>Hamulce i przerzutki.</p>
+          <p class="card__price">od 120 zł</p>
+        </article>
+        <article class="card card--highlight">
+          <p class="card__badge">Najczęściej wybierane</p>
+          <h3>Serwis pełny</h3>
+          <p>Rozebranie, czyszczenie i regulacja całego roweru.</p>
+          <p class="card__price">od 250 zł</p>
+        </article>
+        <article class="card">
+          <h3>Wymiana dętki</h3>
+          <p>Szybka naprawa przebitego koła.</p>
+          <p class="card__price">od 30 zł</p>
+        </article>
+      </div>
+
+      <table class="price-table">
+        <thead>
+          <tr><th>Usługa</th><th class="num">Cena</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Przegląd</td><td class="num">120 zł</td></tr>
+          <tr><td>Serwis pełny</td><td class="num">250 zł</td></tr>
+          <tr><td>Wymiana dętki</td><td class="num">30 zł</td></tr>
+          <tr><td>Centrowanie koła</td><td class="num">50 zł</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer id="kontakt">
+    <h2>Kontakt</h2>
+    <p>ul. Gdańska 10, 85-005 Bydgoszcz</p>
+    <p>Tel.: <a href="tel:+48500100200">500 100 200</a></p>
+    <p>E-mail: <a href="mailto:kontakt@szprycha.pl">kontakt@szprycha.pl</a></p>
+    <p>&copy; <?= $rok ?> <?= $firma ?></p>
+  </footer>
+</body>
+</html>
